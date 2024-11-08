@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <modelVersion>4.0.0</modelVersion>
+
+    <groupId>com.example</groupId>
+    <artifactId>PhoneValidation</artifactId>
+    <version>1.0-SNAPSHOT</version>
+    <packaging>jar</packaging>
+
+    <name>PhoneValidation</name>
+    <description>Phone Number Validation Application</description>
+
+    <parent>
+        <groupId>org.springframework.boot</groupId>
+        <artifactId>spring-boot-starter-parent</artifactId>
+        <version>2.7.0</version> <!-- Update to the latest Spring Boot version if needed -->
+    </parent>
+
+    <dependencies>
+        <!-- Spring Boot Web Starter (Includes RestController, etc.) -->
+        <dependency>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-starter-web</artifactId>
+            <version>2.7.0</version> <!-- Update to the latest Spring Boot version if needed -->
+        </dependency>
+
+        <!-- Spring Boot Test Starter (For unit tests) -->
+        <dependency>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-starter-test</artifactId>
+            <version>2.7.0</version> <!-- Update to the latest Spring Boot version if needed -->
+            <scope>test</scope>
+        </dependency>
+
+        <!-- Spring Boot Logging (Required for logging configuration) -->
+        <dependency>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-starter-logging</artifactId>
+            <version>2.7.0</version> <!-- Update to the latest Spring Boot version if needed -->
+        </dependency>
+
+        <!-- Optional: Add other dependencies as needed (e.g., database, security) -->
+    </dependencies>
+
+    <build>
+        <plugins>
+            <!-- Spring Boot Maven Plugin to package as executable jar -->
+            <plugin>
+                <groupId>org.springframework.boot</groupId>
+                <artifactId>spring-boot-maven-plugin</artifactId>
+                <version>2.7.0</version> <!-- Update to the latest Spring Boot version if needed -->
+            </plugin>
+        </plugins>
+    </build>
+</project>
+
